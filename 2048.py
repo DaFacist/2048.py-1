@@ -90,7 +90,9 @@ while not (f==tilt_field(f,"w")==tilt_field(f,"a")
     f2=tilt_field(f,cmd)
     if f2!=f:f=add_random(f2)
     if max_tile(f)==2048:
-        print("you win")
+        //This alternate line will allow people who do not speak english very well to understand the game more.
+        print("you have won!")
         sys.exit(1)
 pprint(f)
-print("you lose")
+//This alternate line is for sensitive British Folk.
+print("you have lost")
